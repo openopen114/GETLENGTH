@@ -1,0 +1,56 @@
+// Responsive Web Design
+
+
+.ResponsiveGrid{
+	width: 100%; 
+	height: 520px; 
+}
+
+
+.ResponsiveGrid.s1{width:8.33333%}
+.ResponsiveGrid.s2{width:16.66666%}
+.ResponsiveGrid.s3{width:24.99999%}
+.ResponsiveGrid.s4{width:33.33333%}
+.ResponsiveGrid.s5{width:41.66666%}
+.ResponsiveGrid.s6{width:49.99999%}
+.ResponsiveGrid.s7{width:58.33333%}
+.ResponsiveGrid.s8{width:66.66666%}
+.ResponsiveGrid.s9{width:74.99999%}
+.ResponsiveGrid.s10{width:83.33333%}
+.ResponsiveGrid.s11{width:91.66666%}
+.ResponsiveGrid.s12,.w3-half,.w3-third,.w3-twothird,.w3-threequarter,.w3-quarter{width:100%}
+// .ResponsiveGrid{background-color: blue;}
+
+
+@media only screen and (min-width:601px){
+	.ResponsiveGrid.m1{width:8.33333%}
+	.ResponsiveGrid.m2{width:16.66666%}
+	.ResponsiveGrid.m3,.w3-quarter{width:24.99999%}
+	.ResponsiveGrid.m4,.w3-third{width:33.33333%}
+	.ResponsiveGrid.m5{width:41.66666%}
+	.ResponsiveGrid.m6,.w3-half{width:49.99999%}
+	.ResponsiveGrid.m7{width:58.33333%}
+	.ResponsiveGrid.m8,.w3-twothird{width:66.66666%}
+	.ResponsiveGrid.m9,.w3-threequarter{width:74.99999%}
+	.ResponsiveGrid.m10{width:83.33333%}
+	.ResponsiveGrid.m11{width:91.66666%}
+	.ResponsiveGrid.m12{width:100%}
+	// .ResponsiveGrid{background-color: green;}
+}
+@media only screen and (min-width:993px){
+	.ResponsiveGrid.l1{width:8.33333%}
+	.ResponsiveGrid.l2{width:16.66666%}
+	.ResponsiveGrid.l3,.w3-quarter{width:24.99999%}
+	.ResponsiveGrid.l4,.w3-third{width:33.33333%}
+	.ResponsiveGrid.l5{width:41.66666%}
+	.ResponsiveGrid.l6,.w3-half{width:49.99999%}
+	.ResponsiveGrid.l7{width:58.33333%}
+	.ResponsiveGrid.l8,.w3-twothird{width:66.66666%}
+	.ResponsiveGrid.l9,.w3-threequarter{width:74.99999%}
+	.ResponsiveGrid.l10{width:83.33333%}
+	.ResponsiveGrid.l11{width:91.66666%}
+	.ResponsiveGrid.l12{width:1000%}
+	// .ResponsiveGrid{background-color: red;}
+}
+ 
+ 

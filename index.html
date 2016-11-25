@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="App">
+<head>
+	<!-- Hugo Zeng -->
+	<!-- openopen114@gmail.com -->
+	<!-- 2016/11/25 -->
+	<meta charset="UTF-8">
+	<title>Count Total Length</title>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script src="js/angularJS/angular.min.js"></script>
+	<script src="js/angularJS/angular-sanitize.js"></script>  
+	<link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+	<link rel="stylesheet" href="css/screen.css?v=1.2">
+
+</head>
+<body ng-controller="CountLengthCtrl">
+	<div class="fullContent ResponsiveGrid s12 flexLeft">
+		<div class="halfContent  ResponsiveGrid s3 flexColumn flexAlignCenter">
+			<!-- LOGO -->
+			<img src="images/GETLENGTH-logo.png" alt="">
+
+			<!-- form -->
+			<form class="flexColumn flexAlignCenter" ng-submit="addItem()">
+    
+				<div class="group">      
+					<input type="number" ng-model="Length" required/>
+					<span class="highlight"></span>
+					<span class="bar"></span>
+					<label>Length</label>
+				</div>
+
+				<div class="group">      
+					<input type="number" ng-model="Quantity" required/>
+					<span class="highlight"></span>
+					<span class="bar"></span>
+					<label>Quantity</label>
+				</div>
+
+				<input type="submit" id="submit" value="Add" />
+			</form>
+			<!-- /form -->
+
+
+			<!-- calculate result -->
+			<div class="calcResult">
+				<h3 ng-bind="totalUnit | number:2"> <span>unit</span></h3>
+				<h3 ng-bind="totalLength | number"> <span>mm</span></h3> 
+				
+
+			</div>
+			<!-- /calculate result -->
+		</div>
+
+		<!-- Left -->
+		<div class="halfContent  ResponsiveGrid s9 flexColumn flexAlignCenter">
+			<!-- table -->
+			<div class="tableContent">
+				<table>
+					<tr>
+						<th>ID</th>
+						<th>Length</th>
+						<th>Quantity</th>
+						<th>Result</th>
+					</tr>
+					<tr ng-repeat="item in dataList">
+
+						<td><span ng-bind="$index+1"></span></td>
+					 	<td><span ng-bind="item.Length | number"></span></td>
+					 	<td><span ng-bind="item.Quantity | number"></span></td>
+					 	<td><span ng-bind="item.Length * item.Quantity | number"></span></td>
+					</tr>
+				</table>
+			</div>
+			<!-- /table -->
+		</div>
+
+	</div>
+
+
+	<script src="js/countLength.js?v=1.2"></script>
+
+	
+</body>
+</html>
