@@ -1,0 +1,2 @@
+# GETLENGTH
+calculate total length
